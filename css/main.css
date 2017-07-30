@@ -1,0 +1,235 @@
+html {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit; 
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Book'), url("../font/Gotham-Book.otf") format('opentype');
+}
+
+body {
+    font-family: "Gotham Book", sans-serif;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#preloader {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index: 444;
+}
+
+.page-wrapper {
+    /*display: none;*/
+    width: 810px;
+    margin:0 auto;
+    position: relative;
+    z-index: 555;
+    border:1px solid rgba(0,0,0,0);
+    padding:40px 0px;
+}
+
+#logo {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 105px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 650px;
+    height: 350px;
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#prev,
+#next {
+    position: absolute;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#prev {
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next {
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carousel {
+    width: 650px;
+    height:350px;
+    overflow: hidden;
+}
+
+#carousel div {
+    cursor: pointer;
+}
+
+#carousel img {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    opacity: 0.85 !important;
+}
+
+.carousel-texts {
+    position: absolute;
+    bottom: 110px;
+    width: 100%;
+    text-align: center;
+    color: #94713d;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 4444;
+}
+.carousel-text {
+    display: none;
+}
+
+.series {
+    max-width: 750px;
+    height:300px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+    top:-75px;
+}
+.series img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serie {
+    position: absolute !important;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.85 !important;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url(../images/next.png) !important;
+    transform: scale(.75);
+    right: 0 !important;
+    /*margin-top:-47px !important;*/
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url(../images/prev.png) !important;
+    transform: scale(.75);
+    left: 0 !important;
+    /*margin-top:-47px !important;*/
+}
+
+.swiper-slide span {
+    position: absolute;
+    bottom: 0px;
+    vertical-align: top;
+    height: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #94713d;
+}
+
+/* classes */
+.show {visibility: visible;}
+.hide {visibility: hidden;}
+.show-text {display: block;}
+
+/*
+.buy {
+    position: relative;
+    top:25px;
+    z-index: 2;
+    color: #000;
+    background-image: linear-gradient(145deg, #bd9a49 0%, #FFFFFF 51%, #bd9a49 100%);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+*/
